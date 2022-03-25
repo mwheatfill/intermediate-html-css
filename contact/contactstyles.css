@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Chunk Five';
+  src: url('/fonts/chunkfive-regular-webfont.woff2') format('woff2'),
+    url('/fonts/chunkfive-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hatori Hanzo';
+  src: url('/fonts/hattori_hanzo-webfont.woff2') format('woff2'),
+    url('/fonts/hattori_hanzo-webfont.woff') format('woff');
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Chunk Five';
+  font-size: 2em;
+  color: #333;
+}
+
+form {
+  font-family: 'Hatori Hanzo';
+  font-size: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+  box-sizing: border-box;
+
+  width: 50vw;
+  margin-top: 3rem;
+
+  background-color: rgb(244, 244, 244);
+  border-radius: 1em;
+  padding: 3em 2em;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  row-gap: 0.25em;
+  margin-bottom: .5em;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  padding: 0.5em;
+  border: none;
+  transition: all 0.1s ease-in;
+
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid orange;
+}
+
+textarea {
+  height: 5em;
+}
+
+.button {
+  margin-bottom: 3em;
+}
+
+button {
+  padding: 1em;
+  background-color: #333;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: #333;
+  background-color: white;
+  border: 2px solid #333;
+}
